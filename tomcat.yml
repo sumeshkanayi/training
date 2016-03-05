@@ -1,0 +1,16 @@
+---
+- hosts: minion1
+  tasks:
+        - name: "install git"
+          yum: name="git" state="present"
+        - name: "install tomcat"
+          yum: name="tomcat" state="present"
+        - name: "install tomcat admin packages"
+          yum: name={{item}} state="present"
+          with_items:
+                       - tomcat-webapps
+                       - tomcat-admin-webapps
+        - name: "start tomcat service"
+          service: name="tomcat" state="restarted"
+
+          
