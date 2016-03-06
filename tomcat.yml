@@ -12,5 +12,9 @@
                        - tomcat-admin-webapps
         - name: "start tomcat service"
           service: name="tomcat" state="restarted"
+        - name: copy jenkins war file
+          copy: src="/vagrant/jenkins.war" dest="/var/lib/tomcat/webapps"
+        - name: restart tomcat
+          service: name="tomcat" state="restarted"
 
           
