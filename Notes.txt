@@ -1,0 +1,46 @@
+Add the below tag in pom.xml
+
+<distributionManagement>
+  	<repository>
+  		<id>prod</id>
+  		<url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
+  		<name>myprod</name>
+         </repository>
+
+</distributionManagement>
+
+runnning mvn deploy will upload the artifacts to the url above mentioned
+
+note that i have given the id as prod
+the username and password which willbe used for connecting the above url is present under an xml tag as you can beelow (.m2/settings.xml file)
+
+
+  </servers>
+<server>
+      <id>prod</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+
+  </servers>
+
+http://maven.apache.org/guides/mini/guide-encryption.html shows how to encrypt the password
+
+
+To use nexus for dependency management add the below tags under m2/settings.xml file
+
+<mirrors>
+    <mirror>
+      <id>myteam-nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <!-- CHANGE HERE by your team own nexus server -->
+      <url>http:// IP or FQDN /nexus/content/groups/public </url>
+    </mirror>
+  </mirrors>
+
+
+
+The below url us excellent
+
+http://terasolunaorg.github.io/guideline/5.0.x/en/Appendix/Nexus.html
+
