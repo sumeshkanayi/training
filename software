@@ -6,11 +6,10 @@ chefdk-->https://downloads.chef.io/chef-dk/mac/
 guppetto--> https://puppet.com/blog/geppetto-a-puppet-ide
 putty =>http://www.putty.org/
 Browsers --> firefox & chrome
-
 winzip or winrar
 
-Run the below commands
-Note : Needs high speed intenet
+*****Run the below commands once you have the above software installed (Note : Needs high speed intenet)
+
 vagrant init hashicorp/precise64
 vagrant up
 
