@@ -8,7 +8,8 @@ putty =>http://www.putty.org/
 Browsers --> firefox & chrome
 winzip or winrar
 
-*****Run the below commands once you have the above software installed (Note : Needs high speed intenet)
+*****Please Note: Run the below commands once you have the above software installed (Note : Needs high speed intenet)
+
 
 vagrant init hashicorp/precise64
 vagrant up
