@@ -6,6 +6,14 @@ git https://git-scm.com/downloads
 
 maven https://maven.apache.org/download.html
 
+intellij: https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC
+
+create github account
+
+sample repository:https://github.com/sumeshkanayi/blue.git
+
+
+
 creating repositories
 
 adding committing files
