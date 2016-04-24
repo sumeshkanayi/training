@@ -1,4 +1,10 @@
 git and maven
+***********************************
+s/w required :
+
+git https://git-scm.com/downloads
+
+maven https://maven.apache.org/download.html
 
 creating repositories
 
