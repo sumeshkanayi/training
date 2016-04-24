@@ -1,0 +1,19 @@
+git and maven
+
+creating repositories
+
+adding committing files
+
+git ignore
+
+create github account
+
+do a clone pull fetch and push
+
+hooks
+
+bare init repositories
+
+introduction to gitblit gitlab bitbuvket etc
+
+Introduction to maven
