@@ -9,3 +9,9 @@ mvn archetype:generate -DgroupId=com.companyname.bank -DartifactId=consumerBanki
 --Deployment Automation---
 
 http://www.tutorialspoint.com/maven/maven_deployment_automation.htm
+
+
+----commands---
+
+mvn clean package
+mvn clean test
