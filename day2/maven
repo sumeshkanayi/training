@@ -1,0 +1,11 @@
+--Maven:--
+http://www.slideshare.net/MikeEnsor/maven-3-overview-15845337
+http://www.tutorialspoint.com/maven/index.htm
+
+
+--Command to create a simple maven project:---
+mvn archetype:generate -DgroupId=com.companyname.bank -DartifactId=consumerBanking -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+--Deployment Automation---
+
+http://www.tutorialspoint.com/maven/maven_deployment_automation.htm
