@@ -6,7 +6,40 @@ creating repositories in nexus
 
 how to upload to nexus
 
+----------------------------------------------------------------------------------
+ Added the below entry to pom.xml of the maven project
 
+
+ <distributionManagement>
+   <snapshotRepository>
+      <id>prod</id>
+      <url>http://localhost:8081/repository/production/</url>
+   </snapshotRepository>
+</distributionManagement>
+
+Here we are asking maven to upload all artifacts to the url mentioned in the <url> section 
+Note: please change the url according to your setup
+
+
+***************please make a note of <id>prod</id> 
+
+in settings.xml under M2_HOME directory we should have the below entry
+
+(you can Copy paste the below line to settings.xml )
+<server>
+      <id>prod</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+
+
+    during mvn deploy phase
+
+    maven will  parse POM file and find out that it has to deploy the artifacts to a repository with id prod and the credentials to connect to the repository is retrieved from
+
+    settings.xml <server></server> tab, here it is admin and admin123
+
+------------------------------------------------------------------------------------------
 
 jenkins: https://jenkins.io/content/thank-you-downloading-windows-installer/
 
@@ -15,4 +48,6 @@ different types of jobs
 freestyle job
 
 integrating with github
+
+
 
