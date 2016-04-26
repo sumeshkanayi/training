@@ -4,6 +4,8 @@ nexus:http://www.sonatype.com/oss-thank-you-win64.exe
 
 creating repositories in nexus
 
+ hosted repositories: The one where you will be uploading your internal company artifacts
+
 how to upload to nexus
 
 ----------------------------------------------------------------------------------
