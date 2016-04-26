@@ -39,7 +39,13 @@ in settings.xml under M2_HOME directory we should have the below entry
 
     settings.xml <server></server> tab, here it is admin and admin123
 
+sample files are here
+
+https://github.com/sumeshkanayi/training/tree/master/day2/settings.xml
+https://github.com/sumeshkanayi/training/tree/master/day2/pom.xml
 ------------------------------------------------------------------------------------------
+
+
 
 jenkins: https://jenkins.io/content/thank-you-downloading-windows-installer/
 
