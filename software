@@ -17,13 +17,13 @@ jenkins: https://jenkins.io/
 
 
 
-*****Please Note: Run the below commands once you have the above software installed (Note : Needs high speed intenet)
-
-
+*****Please Note: Run the below commands once you have vagrant installed (Note : Needs high speed intenet)
+mkdir c:\DevOps
+cd c:\DevOps
 vagrant init hashicorp/precise64
 vagrant up
 
-
+****************
 ***Knowledge Base***
 
 http://www.slideshare.net/jaaronfarr/scrum-agile-for-everyone/33
