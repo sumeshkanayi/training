@@ -1,4 +1,7 @@
-Below are the list of  software you need to install on your laptop
+- You can have the below software installed on your laptops or on oracle virtual box machines (Make sure that these machines are configured in a way that
+they can be accessded from your laptop/pc
+
+- It is good to have 4 Ubuntu linux virtual machines configured in a way that all can tlak to each other
 
 git --> https://git-scm.com/downloads
 oracle virtual box ---> https://www.virtualbox.org/
