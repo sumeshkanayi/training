@@ -1,3 +1,5 @@
+Below are the list of  software you need to install on your laptop
+
 git --> https://git-scm.com/downloads
 oracle virtual box ---> https://www.virtualbox.org/
 vagrant-->https://www.vagrantup.com/downloads.html
@@ -7,6 +9,10 @@ guppetto--> https://puppet.com/blog/geppetto-a-puppet-ide
 putty =>http://www.putty.org/
 Browsers --> firefox & chrome
 winzip or winrar
+Nexus:http://www.sonatype.com/download-oss-sonatype
+jenkins: https://jenkins.io/
+
+
 
 *****Please Note: Run the below commands once you have the above software installed (Note : Needs high speed intenet)
 
