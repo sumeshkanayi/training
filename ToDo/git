@@ -1,0 +1,109 @@
+#Create a directory called MyCar under C:\Drive
+mkdir c:\Mycar
+cd c:\Mycar
+#initialize a empty git repository
+git init
+#Create Pod1.txt Prod2.txt
+touch Prod1.txt 
+#execute git status
+git status
+git log
+# Add files to git database
+git add *
+#commit both files 
+git commit -am "added to parent branch"
+#confirm that log is updated
+git log 
+
+#Add few lines to Prod files
+#execute git status
+git status
+git log
+# Add files to git database
+git add *
+#commit both files 
+git commit -am "added to parent branch with new lines"
+#confirm that log is updated
+git log --oneline
+
+#find the log number for the earlier commit and do a git checkout
+
+git checkout lognumber
+
+#confim that current file doesnt have the latest changes
+
+#Back to master
+
+git checkout master
+
+#add one branch named dev using git branch
+git branch dev
+#Confirm that you are on master branch (Check for the *)
+git branch
+#checkout to dev branch
+git checkout dev
+#add 3 files Dev1,Dev2,Dev3.txt
+touch Dev1 Dev2 Dev3
+#Add all files to git database
+git add *
+git commit -am "added to dev branch"
+#Execute below command to make sure that you are in Dev branch
+git branch 
+#execute DIR and make sure that you have all files (Both prod and Dev)
+#Do a git checkout to master
+git checkout master
+#Do a DIR and make sure that you are seeing only Prod files
+
+git checkout dev
+#Do a DIR and make sure that you are seeing both Prod and Dev files
+#Checkout to master and confirm that you are on the right branch
+git checkout master
+git branch 
+
+#Mege Dev with Master
+git merge dev
+#Do a DIR and make sure that you are seeing both Prod and Dev files
+
+
+Create a git hub account and create a  repository
+get the git clone url 
+
+cd c:\Myca
+
+git clone URL
+
+cd to the cloned directory
+
+#Create Pod1.txt Prod2.txt
+touch Prod1.txt 
+#execute git status
+git status
+git log
+# Add files to git database
+git add *
+#commit both files 
+git commit -am "added to parent branch"
+#Push to github
+
+git push 
+#provide the credentials
+#Confirm that files are updates in the git hub
+
+#Go to github url and add a new file through web interface eg:1.txt
+
+git pull
+
+#make sure that 1.txt is updated in local repository
+
+learn about the below commands
+
+git fetch
+git rebase
+git revert
+git reset
+git remote
+
+
+
+
+
