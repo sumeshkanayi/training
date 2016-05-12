@@ -109,6 +109,7 @@ git rebase
 git revert
 git reset
 git remote
+git rm
 
 
 Leanr about Gitlab/gitblit/bit bucket etc
