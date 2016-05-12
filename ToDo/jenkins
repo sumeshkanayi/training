@@ -1,1 +1,12 @@
 
+- Create a freestyle job which will run the below line as a script
+- echo "hello world" 
+- create a maven project , upload it to git hub
+- Create a maven job project in jenkins (Name as Maven job)
+- install git plugin for jenkins
+- run clean install as the goal
+- schedule it to run everyday at 9 AM
+- Follow thee below url and generate code coverage report
+- https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin
+- Add a remote windows machine as a slave 
+https://wiki.jenkins-ci.org/display/JENKINS/Step+by+step+guide+to+set+up+master+and+slave+machines
