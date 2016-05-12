@@ -1,3 +1,10 @@
+
+** Make sure git is installed and git bin directory is under System Path variable
+** refer below urls for setting system variables
+ 
+ #   https://java.com/en/download/help/path.xml
+
+
 #Create a directory called MyCar under C:\Drive
 mkdir c:\Mycar
 cd c:\Mycar
