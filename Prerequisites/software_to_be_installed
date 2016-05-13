@@ -32,3 +32,12 @@ http://www.slideshare.net/jaaronfarr/scrum-agile-for-everyone/33
 http://www.slideshare.net/sgenterprise20/introduction-to-jira?qid=3c8ee02a-c04e-462a-804e-3f1b0af41110&v=&b=&from_search=1
 
 https://www.atlassian.com/software/jira/try/?_mid=540a7a6d14b8f9ba0ea4097283fa16db&aceid=&adposition=1t1&adgroup=9124219462&campaign=189405382&creative=79288619062&device=c&keyword=atlassian%20jira&matchtype=e&network=g&placement=&gclid=CjwKEAjwxce4BRDE2dG4ueLArHMSJADStCqM-R25vr71gRsJEaidc4drS07a1uLchjDlZwYnaN1ZPBoCpr7w_wcB
+
+----------------------------------------------------
+Install the below vagrant plugin by running the command
+vagrant plugin install vagrant-hostmanager
+Search for ssh.exe in your my computer and add the directory path to PATH variable of your my computer
+Eg:
+C:\Local\Programs\Git\usr\bin
+
+
