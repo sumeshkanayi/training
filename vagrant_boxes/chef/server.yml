@@ -1,0 +1,14 @@
+- name: "chefmaster"
+  ip: 10.0.0.20
+  box: hashicorp/precise64
+- name: "chefnode1"
+  ip: 10.0.0.21
+  box: hashicorp/precise64
+- name: "chefdk"
+  ip: 10.0.0.22
+  box: hashicorp/precise64
+  
+
+
+
+
