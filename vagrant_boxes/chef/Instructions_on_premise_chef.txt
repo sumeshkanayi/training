@@ -1,0 +1,58 @@
+# Note : you should have all prerequisites installed
+
+1)Download Both Chef server,chef-manage and chef dk version for ubuntu Ubuntu Linux 12.04 
+2) Install the below vagrant plugins (Run the command)
+
+vagrant plugin install vagrant-hostmanager
+vagrant plugin install vagrant-cachier
+
+3) run 
+
+vagrant ssh chefmaster
+
+set the root passwd 
+
+sudo passwd root (give new password for root)
+
+su -
+
+(enter the latest password)
+
+4)cd /vagrant
+
+5) run 
+
+sh chefserver_install.sh
+
+once installed 
+
+execute 
+
+chef-server-ctl reconfigure
+
+sh chefconsole.sh
+
+chef-server-ctl reconfigure
+
+chef-manage-ctl reconfigure
+
+chef-server-ctl reconfigure
+
+sh chefreporting.sh
+
+
+6)Follow the instruction
+
+7)Once chef server is installed 
+
+8)exit from shell
+
+9) vagrant ssh chefdk
+
+10) cd /vagrant
+
+11)sh chef_dk_install.sh
+
+
+
+
