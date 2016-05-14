@@ -1,0 +1,30 @@
+1)Download chef dk version for ubuntu Ubuntu Linux 12.04  ()
+
+2) Install the below vagrant plugins (Run the command)
+
+vagrant plugin install vagrant-hostmanager
+vagrant plugin install vagrant-cachier
+
+# do a vagrant up
+
+ # Initially login to each box and set the root password to root123 (vagrant ssh chefnode1 chefnode2 chefnode3)
+
+ sudo passwd root
+
+ # access url https://getchef.opscode.com/login and signup for a free hosted account
+
+ # login to hosted chef and create a new organization
+
+ # download starter kit new the training/vagrant_boxes/chef directory
+
+ #vagrant ssh chefdk
+
+ #execute su -
+
+ #execute sh chef_dk_install.sh
+
+ #extract the starter kit downloaded earlier 
+
+ #cd to chef-repo directory created under starter kit foldert
+
+For Windows Users
