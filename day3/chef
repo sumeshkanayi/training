@@ -3,3 +3,14 @@ Chef server
 
 Download Ubuntu Linux 12.04 version .DEB file and install using dpkg
 https://downloads.chef.io/chef-server/ubuntu/
+
+AWS
+-----
+knife bootstrap x.x.x.x --ssh-user ubuntu --sudo --identity-file ./.chef/mykey.pem --run-list webserver
+  
+  Non AWS
+  
+  -----
+  
+  knife bootstrap x.x.x.x --ssh-user ubuntu
+  
