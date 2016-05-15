@@ -1,16 +1,15 @@
-Chef server
---------------------------------------
+Step1: Confirm that you are able to execure the below command from host
 
-Download Ubuntu Linux 12.04 version .DEB file and install using dpkg
-https://downloads.chef.io/chef-server/ubuntu/
+ping chefnode
+ping chefnode1
+
 
 AWS
 -----
 knife bootstrap x.x.x.x --ssh-user ubuntu --sudo --identity-file ./.chef/mykey.pem --run-list webserver
   
-  Non AWS
+Non AWS
+-----
   
-  -----
-  
-  knife bootstrap x.x.x.x --ssh-user ubuntu
+knife bootstrap x.x.x.x --ssh-user ubuntu
   
