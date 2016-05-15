@@ -15,7 +15,7 @@ Bootstraping:
 -------------------------
 AWS
 -----
-knife bootstrap x.x.x.x --ssh-user ubuntu --sudo --identity-file ./.chef/mykey.pem --run-list webserver
+knife bootstrap x.x.x.x --ssh-user ubuntu --sudo --identity-file ./.chef/mykey.pem
   
 Non AWS
 -----
