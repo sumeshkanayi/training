@@ -59,6 +59,8 @@ knife node run_list add chefnode1 'COOKBOOKNAME'
 
 once added login to chefnode1 and execute the below commands
 
+(make sure ypu ar logging using root ,once done with vagrant ssh you need to type su - ,enter root password and login)
+
 chef-client --why-run
 
 (Above command will just simulate execution)
