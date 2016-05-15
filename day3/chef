@@ -1,9 +1,18 @@
-Step1: Confirm that you are able to execure the below command from host
+Confirm that you are able to execure the below command from host
 
 ping chefnode
 ping chefnode1
 
 
+execute the command and confirm that the output is empty
+
+knife node list
+
+
+
+
+Bootstraping:
+-------------------------
 AWS
 -----
 knife bootstrap x.x.x.x --ssh-user ubuntu --sudo --identity-file ./.chef/mykey.pem --run-list webserver
@@ -13,3 +22,72 @@ Non AWS
   
 knife bootstrap x.x.x.x --ssh-user ubuntu
   
+once bootstrap is completed execute 
+
+knife node list  
+
+and confirm that you have the newly added machine avialable on the command promt
+  
+  
+
+create a new cookbook by typing 
+
+berks cookbook COOKBOOK_NAME (Make sure you are under chef-repo/cookbooks directory,which you created by downloading the starter kit)
+
+open recipe/default.rb under the new cookbook folder in a notepad and add the below line
+
+*****************
+package 'nginx' do
+action :install
+
+end
+******************
+
+go to the cookbook directory theough CMD and execute the below commands
+
+berks install
+
+berks upload --no-freeze
+
+confirm that new cookbook is uploaded to the server
+
+Assign the cookbok to the node run list 
+
+knife node run_list add chefnode1 'COOKBOOKNAME'
+
+once added login to chefnode1 and execute the below commands
+
+chef-client --why-run
+
+(Above command will just simulate execution)
+
+chef-client
+
+(Will execute the command)
+
+Once done go to the cookbook you created and copy blue.rb to the recipes directory
+
+copy iamlocatedinthefiledirectory.txt to the files directory
+
+execute the below commands
+
+berks install
+
+berks upload --no-freeze
+
+knife node run_list add chefnode2 'COOKBOOKNAME::blue'
+
+chef-client --why-run
+
+(Above command will just simulate execution)
+
+chef-client
+
+(Will execute the command)
+
+
+
+
+
+
+
