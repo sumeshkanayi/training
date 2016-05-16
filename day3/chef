@@ -57,7 +57,9 @@ knife bootstrap x.x.x.x --ssh-user ubuntu --sudo --identity-file ./.chef/mykey.p
 Non AWS
 -----
   
-knife bootstrap x.x.x.x --ssh-user ubuntu
+knife bootstrap x.x.x.x --ssh-user root
+
+(x.x.x.x = ip address of your chefnode1 and chefnode2)
   
 once bootstrap is completed execute 
 
