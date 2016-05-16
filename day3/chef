@@ -15,7 +15,6 @@ Download and install chefdk for windows
 Install the below vagrant plugins (Run the command)
 
 vagrant plugin install vagrant-hostmanager
-vagrant plugin install vagrant-cachier
 
 do a vagrant up chefnode1 chefnode2
 
@@ -23,7 +22,7 @@ Initially login to each box and set the root password to root123 (vagrant ssh ch
 
 sudo passwd root
 
-run apt-get update on both chefnode1 and chef node2
+run apt-get update on both chefnode1 and chefnode2
 
 access url https://getchef.opscode.com/login and signup for a free hosted account
 
