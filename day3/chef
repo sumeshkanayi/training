@@ -147,7 +147,7 @@ and also a file  /tmp/comingfromblue.txt be present at the chefnode2
 #Can you comeup with a plan to install jenkins using chf now? (hints: tomcat,jenkins.war)
 
 
-Modify default.rb (mention your name and cell number ) and copy to the attributes directory
+Modify default.rb (mention your name and cell number ) and copy to the attributes directory of earlier created cookbook
 
 add the below lines to the existing cookbook
 ----
