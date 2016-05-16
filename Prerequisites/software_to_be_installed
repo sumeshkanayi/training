@@ -15,9 +15,14 @@ Make sure that following paths are added to the System Path
 
 - JDK Bin Folder (Eg:C:\Program Files\Java\jdk1.8.0_45\bin)
 - Apache Maven Bin folder (Eg:C:\SW\apache-maven-3.3.9\bin)
-- git bin folder (Eg: C:\Local\Programs\Git\usr\bin)
-- git user/bin foldeer (Eg: c:\programfiles\gitusr\bin)
+- git bin folder (Eg:c:\programfiles\git\bin )
+- git user/bin foldeer (C:\Local\Programs\Git\usr\bin)
 
+go to command prompt and make sure that all the below commands are getting executed
+
+1)git
+2)mvn
+3)javac
 
 
 oracle virtual box ---> https://www.virtualbox.org/
