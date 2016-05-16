@@ -8,6 +8,7 @@
 
 4)All chef-client commands has to be exeucted on the linux clients (After vagrant ssh,if vagrant ssh command fails then search for ssh.exe in your computer,locate the path and then add the path to the SYSTEM PATH variable)
 
+5)Before copying any files ,read the files and ask any questions if you have
 
 Download and install chefdk for windows
 
