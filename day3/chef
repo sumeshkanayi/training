@@ -1,13 +1,50 @@
+# Make sure you have the following understood before following the doc
+
+1) Any files mentioned here (eg:default.rb,blue.rb) are located in the day3/chef directory 
+
+2) All knife ,berks commands has to be executed from chef-repo directory (Downloaded starter kit)
+
+3) All vagrant command has to be executed from vagrant_boxes/chef direcctory
+
+4)All chef-client commands has to be exeucted on the linux clients (After vagrant ssh,if vagrant ssh command fails then search for ssh.exe in your computer,locate the path and then add the path to the SYSTEM PATH variable)
+
+
+Download and install chefdk for windows
+
+Install the below vagrant plugins (Run the command)
+
+vagrant plugin install vagrant-hostmanager
+vagrant plugin install vagrant-cachier
+
+do a vagrant up chefnode1 chefnode2
+
+Initially login to each box and set the root password to root123 (vagrant ssh chefnode1,vagrant ssh chefnode2 )
+
+sudo passwd root
+
+run apt-get update on both chefnode1 and chef node2
+
+access url https://getchef.opscode.com/login and signup for a free hosted account
+
+login to hosted chef and create a new organization
+
+download starter kit 
+
+extract the starter kit downloaded earlier 
+
+make sure you have a chef-repo directory created ,all knife ,berks commands has to be run from here
+
+
 Confirm that you are able to execure the below command from host
 
-ping chefnode
 ping chefnode1
+ping chefnode2
+
 
 
 execute the command and confirm that the output is empty
 
 knife node list
-
 
 
 
@@ -28,8 +65,6 @@ knife node list
 
 and confirm that you have the newly added machine avialable on the command promt
   
-  
-
 create a new cookbook by typing 
 
 berks cookbook COOKBOOK_NAME (Make sure you are under chef-repo/cookbooks directory,which you created by downloading the starter kit)
@@ -110,7 +145,7 @@ and also a file  /tmp/comingfromblue.txt be present at the chefnode2
 #Can you comeup with a plan to install jenkins using chf now? (hints: tomcat,jenkins.war)
 
 
-Copy default.rb to the attributes directory
+Modify default.rb (mention your name and cell number ) and copy to the attributes directory
 
 add the below lines to the existing cookbook
 ----
@@ -132,8 +167,32 @@ berks upload --no-freeze
 
 chef-client
 
-(Will execute the command)
+Open '/vagrant/important.conf' and confirm that the file is updated witht the (Phone number,name information you provided in the attributes directory) you have provided"
+
 
 
 #Can you come with a plan to change the default port number of tomcat instalaltion as per the attributes you are passsing (hints:tomcat configuration 
 file,templates,attributes)
+
+
+Chef documentation on resources
+
+https://docs.chef.io/resource.html
+
+Libraries 
+
+https://docs.chef.io/libraries.html
+https://www.chef.io/blog/2014/03/12/writing-libraries-in-chef-cookbooks/
+
+Custom resources
+
+https://docs.chef.io/custom_resources.html
+
+json
+
+http://www.w3schools.com/json/
+
+Databag
+https://coderanger.net/data-bags/
+https://docs.chef.io/data_bags.html
+

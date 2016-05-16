@@ -11,6 +11,8 @@ vagrant plugin install vagrant-cachier
 
  sudo passwd root
 
+ run apt-get update on both chefnode1 and chef node2
+
  # access url https://getchef.opscode.com/login and signup for a free hosted account
 
  # login to hosted chef and create a new organization
