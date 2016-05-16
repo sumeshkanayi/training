@@ -3,7 +3,7 @@
 2) Install the below vagrant plugins (Run the command)
 
 vagrant plugin install vagrant-hostmanager
-vagrant plugin install vagrant-cachier
+
 
 # do a vagrant up chefnode1 chefnode2
 
