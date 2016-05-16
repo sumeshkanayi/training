@@ -1,5 +1,7 @@
 - You can have the below software installed on your laptops 
 
+For Day1:
+
 JIRA-->https://www.atlassian.com/software/jira/download
 git --> https://git-scm.com/downloads
 MAVEN-->https://maven.apache.org/download.cgi?Preferred=ftp://mirror.reverse.net/pub/apache/
@@ -24,16 +26,23 @@ go to command prompt and make sure that all the below commands are getting execu
 2)mvn
 3)javac
 
+For Day 2:
+
+Nexus:http://www.sonatype.com/download-oss-sonatype
+jenkins: https://jenkins.io/ (Please make a note of password which you will be seeing in a log file during installation,also remmber the username)
+
+For Day 3:
 
 oracle virtual box ---> https://www.virtualbox.org/
+
 vagrant-->https://www.vagrantup.com/downloads.html
 sublime ---> https://www.sublimetext.com/3
 chefdk-->https://downloads.chef.io/chef-dk/mac/
 putty =>http://www.putty.org/
 Browsers --> firefox & chrome
 winzip or winrar
-Nexus:http://www.sonatype.com/download-oss-sonatype
-jenkins: https://jenkins.io/
+
+Execute: vagrant plugin install vagrant-hostmanager
 
 Docker: https://www.docker.com/ (Preferably on a linux machine)
 
