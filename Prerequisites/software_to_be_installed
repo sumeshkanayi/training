@@ -1,24 +1,36 @@
-- You can have the below software installed on your laptops or on oracle virtual box machines (Make sure that these machines are configured in a way that
-they can be accessded from your laptop/pc
-- It is good to have 4 Ubuntu linux virtual machines configured in a way that all can tlak to each other
+- You can have the below software installed on your laptops 
 
 JIRA-->https://www.atlassian.com/software/jira/download
 git --> https://git-scm.com/downloads
 MAVEN-->https://maven.apache.org/download.cgi?Preferred=ftp://mirror.reverse.net/pub/apache/
+Download maven and extract to a directory on local machines
 JDK1.8-->http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+Make sure that JAVA_HOME environment variable is created and is pointing towards JDK instalaltion folder
+Eg: (C:\Program Files\Java\jdk1.8.0_45)
+
+Make sure that MVN_HOME variable is set as the extracted maven folder path
+Eg: C:\SW\apache-maven-3.3.9)
+
+Make sure that following paths are added to the System Path
+
+- JDK Bin Folder (Eg:C:\Program Files\Java\jdk1.8.0_45\bin)
+- Apache Maven Bin folder (Eg:C:\SW\apache-maven-3.3.9\bin)
+- git bin folder (Eg: C:\Local\Programs\Git\usr\bin)
+- git user/bin foldeer (Eg: c:\programfiles\gitusr\bin)
+
+
 
 oracle virtual box ---> https://www.virtualbox.org/
 vagrant-->https://www.vagrantup.com/downloads.html
 sublime ---> https://www.sublimetext.com/3
 chefdk-->https://downloads.chef.io/chef-dk/mac/
-guppetto--> https://puppet.com/blog/geppetto-a-puppet-ide
 putty =>http://www.putty.org/
 Browsers --> firefox & chrome
 winzip or winrar
 Nexus:http://www.sonatype.com/download-oss-sonatype
 jenkins: https://jenkins.io/
-Docker: https://www.docker.com/ (Preferably on a linux machine)
 
+Docker: https://www.docker.com/ (Preferably on a linux machine)
 
 
 *****Please Note: Run the below commands once you have vagrant installed (Note : Needs high speed intenet)
