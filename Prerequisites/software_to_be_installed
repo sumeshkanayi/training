@@ -2,6 +2,11 @@
 
 For Day1:
 
+Please create a directory under c or d drive and name it as DevOps
+Let us have all action done on the same DevOps directory 
+You need to be flexible with commandline as well through GUI
+Should know  basic commands like how to Change directory (CD), create files,directories etc
+
 JIRA-->https://www.atlassian.com/software/jira/download
 git --> https://git-scm.com/downloads
 MAVEN-->https://maven.apache.org/download.cgi?Preferred=ftp://mirror.reverse.net/pub/apache/
