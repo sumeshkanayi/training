@@ -177,6 +177,66 @@ Open '/vagrant/important.conf' and confirm that the file is updated witht the (P
 file,templates,attributes)
 
 
+berks cookbook library_and_custom_resource
+cd libraries
+copy external_class.rb to libraries
+copy input.txt to default folder and file
+
+update default.rb under recipe directory as below
+
+************************************************
+new_object=Blue.new()
+out_path=new_object.just_say_hello()
+
+cookbook_file out_path do
+  source 'input.txt'
+  owner 'root'
+  group 'root'
+  mode '0644'
+end
+
+*****************************************************
+
+upload the cookbook and add the cookbook to the run list of the node and do a chef-client
+
+Note: here we are calling a class definition from an external ruby script and then using the return value inside the recipe 
+
+
+Copy webapp.rb to resources directory of the earlier created cookbook
+
+Upload the cookbook
+
+Once done create a new cookbook
+
+
+update the below lines to default.rb
+
+=--------------------------------------
+library_and_custom_resource_webapp 'this_is_a_test'  do 
+
+action :uninstall
+
+end
+--------------------------------------
+
+Upload the cookbook and add to the node run list do a chef-client
+
+
+Confirm that apache is uninstalled
+
+
+change the recipe as below 
+--------------------------------------
+library_and_custom_resource_webapp 'this_is_a_test'  do 
+
+action :deploytoprod
+
+end
+--------------------------------------
+
+upload and do a chef client and confirm that apache is back running
+
+
 Chef documentation on resources
 
 https://docs.chef.io/resource.html
@@ -197,4 +257,6 @@ http://www.w3schools.com/json/
 Databag
 https://coderanger.net/data-bags/
 https://docs.chef.io/data_bags.html
+
+
 
