@@ -147,9 +147,9 @@ and also a file  /tmp/comingfromblue.txt be present at the chefnode2
 #Can you comeup with a plan to install jenkins using chf now? (hints: tomcat,jenkins.war)
 
 
-Modify default.rb (mention your name and cell number ) and copy to the attributes directory of earlier created cookbook
+Modify default.rb (present unedr day3 folder ,update with your name and cell number ) and copy to the attributes directory of earlier created cookbook
 
-add the below lines to the existing cookbook
+add the below lines to default.rb of the the existing cookbook recipes folder
 ----
 template '/vagrant/important.conf' do
   source 'sample_template.erb'
