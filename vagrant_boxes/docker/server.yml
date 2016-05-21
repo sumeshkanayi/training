@@ -1,0 +1,12 @@
+- name: "docker1"
+  ip: 10.0.0.20
+  box: bento/centos-7.1
+- name: "docekr2"
+  ip: 10.0.0.31
+  box: bento/centos-7.1
+
+  
+
+
+
+

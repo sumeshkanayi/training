@@ -1,0 +1,26 @@
+
+require 'yaml'
+
+minion_array=YAML.load_file('server.yml')
+
+
+Vagrant.configure("2") do |config|
+  config.hostmanager.enabled = true
+  config.hostmanager.manage_host = true
+  config.hostmanager.manage_guest = true
+  config.hostmanager.ignore_private_ip = false
+  config.hostmanager.include_offline = false
+  
+ minion_array.each{|minion|
+
+
+  config.vm.define "#{minion["name"]}" do |instance|
+  puts "hostname instance  #{minion["name"]}"
+  instance.vm.box = "#{minion["box"]}"
+  instance.vm.hostname="#{minion["name"]}"
+  instance.vm.network "private_network", ip: "#{minion["ip"]}"
+  instance.vm.box_check_update = false
+ 
+ end
+}
+end

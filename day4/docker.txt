@@ -1,0 +1,42 @@
+docker installation steps begins here
+
+*******************************************
+
+after a git pull 
+
+cd to vagrant_boxes/docker
+
+do a vagrant up
+
+once completed change the root password
+
+
+login with root username and execute the below command
+
+curl -fsSL https://get.docker.com/ | sh
+
+*******************************************instalaltion instruction ends here
+
+docker images
+
+docker search nginx
+
+docker pull nginx
+
+docker pull centos
+
+docekr run -it -d nginx
+
+docker run -it -d -h webserver nginx
+
+Cntrl+P+Q
+
+docker ps
+
+docker ps -a
+
+
+docker run -it -d -p 8080:80 -h hostname nginx
+
+docker run -it --name -d -p 
+
