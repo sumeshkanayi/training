@@ -2,6 +2,8 @@ docker installation steps begins here
 
 *******************************************
 
+Make sure that you have vagrant plugins installed (host manager)
+
 after a git pull 
 
 cd to vagrant_boxes/docker
