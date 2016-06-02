@@ -19,7 +19,7 @@
   <distributionManagement>
   	<repository>
   		<id>prod</id>
-  		<url>http://localhost:8081/repository/production/</url>
+  		<url>http://localhost:8081/repository/nexusmavengithu/</url>
   		<name>myprod</name>
 
 
