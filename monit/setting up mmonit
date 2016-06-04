@@ -2,3 +2,28 @@ http://terraltech.com/how-to-install-mmonit-monit/
 
 
 https://mmonit.com/dist/mmonit-3.5.1-linux-x64.tar.gz
+
+
+Copy the gz file to vagrant_boxes/chef folder
+
+vagrant ssh chefnode2
+
+cd /vagrant
+ 
+ tar -xvf mmonit-3.5.1-linux-x64.tar.gz
+ 
+ ls
+ 
+ 
+ cp -r mmonit-3.5.1 /
+ 
+ 
+ cd /mmonit-3.5.1
+ 
+ ./mmonit -i
+ 
+ go to chefnode2:8080
+ 
+ admin
+ 
+ swordfish
