@@ -51,14 +51,9 @@ winzip or winrar
 
 Execute: vagrant plugin install vagrant-hostmanager
 
-Docker: https://www.docker.com/ (Preferably on a linux machine)
 
 
-*****Please Note: Run the below commands once you have vagrant installed (Note : Needs high speed intenet)
-mkdir c:\DevOps
-cd c:\DevOps
-vagrant init hashicorp/precise64
-vagrant up
+
 
 ****************
 ***Knowledge Base***
