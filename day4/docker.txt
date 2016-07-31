@@ -42,3 +42,9 @@ docker run -it -d -p 8080:80 -h hostname nginx
 
 docker run -it --name -d -p 
 
+-------------------
+
+Scenario1:
+
+1)Create a custom docker image with tomcat already installed (Docker Build)
+1) Download jenkins.war file from jenkins website and create a new docker image with jenkins pre installed (Using a docker file tomcat image and jenkins.war file)
