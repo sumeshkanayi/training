@@ -44,7 +44,11 @@ docker run -it --name -d -p
 
 -------------------
 
-Scenario1:
+Things to Do:
 
-1)Create a custom docker image with tomcat already installed (Docker Build)
-1) Download jenkins.war file from jenkins website and create a new docker image with jenkins pre installed (Using a docker file tomcat image and jenkins.war file)
+1)Create a custom docker image with tomcat already installed (Docker Build tool and Dockerfile)
+2) Create a docker image with jenkins pre installed (Using tomcat docker image and jenkins.war file) (Docker build)
+3)Create a webserver container ,do portforwarding  
+4)Learn about volume mounting in docker contianer
+5) Learn docker compose
+6)Learn docker file syntax
