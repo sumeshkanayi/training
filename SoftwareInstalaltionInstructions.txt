@@ -1,0 +1,8 @@
+git client: https://git-scm.com/downloads
+Maven : http://apache.osuosl.org/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip
+jenkins for WIndows: https://jenkins.io/content/thank-you-downloading-windows-installer/
+gitblit : http://dl.bintray.com/gitblit/releases/gitblit-1.8.0.tar.gz 
+sonatype nexus: http://www.sonatype.com/download-oss-sonatype
+Vagrant: https://www.vagrantup.com/downloads.html
+Chefdk: https://downloads.chef.io/chef-dk/mac/
+Docker toolbox: https://www.docker.com/products/docker-toolbox
