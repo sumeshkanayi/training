@@ -1,0 +1,36 @@
+Create a Directory in the current commandline 
+CD to the directory
+Copy Dockerfile to the directory
+from commandline run the below command
+
+docker build --tag newImageName .
+
+(eg: docker build --tag myubuntu .)
+
+newImageName should be in small letters
+
+once it is completed
+
+run below command  
+
+docker images 
+
+
+confirm  that you can see newly created image is created
+
+create a new container using the above created image by running the below command
+
+docker run -it -d --name CONTAINER_NAME -h CONTAINER_HOSTNAME -p 8090:80 myubuntu
+
+Create another container by running the below commandline
+
+docker run -it -d --name CONTAINER_NAME -h CONTAINER_HOSTNAME -p 8092:80 myubuntu
+
+
+Now go to the browser (Chrome or Firefox ) and  try accessing the below URL confirm that nginx is accessible
+
+http://192.168.99.100:8090
+http://192.168.99.100:8092
+
+
+
