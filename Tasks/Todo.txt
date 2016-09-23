@@ -2,4 +2,6 @@ Gitblit Maven and Jenkins
 - Create a new Android Project in Maven and build using jenkins
 - Learn how to create a custom Maven aarchetype from an existing maven project
 - Build a tomcat container , create a new maven webapps project in gitblit, build and deploy the webapps output war file using tomcat plugin container in jenkins
-- 
+Docker
+
+-  Build a devops lab using docker composer (gitblit,jenkins,sonatype nexus) .A simple docker-compose up command should bring the entire devops lab together and should be able to shudown together as well. The order of brining the services up should be gitblit --> jenkins --> nexus
