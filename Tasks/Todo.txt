@@ -1,1 +1,4 @@
 
+- Create a new Android Project in Maven and build using jenkins
+- Learn how to create a custom Maven aarchetype from an existing maven project
+- Build a tomcat container , create a new maven webapps project in gitblit, build and deploy the webapps output war file using tomcat plugin container in jenkins
