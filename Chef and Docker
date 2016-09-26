@@ -1,0 +1,19 @@
+Chef introduction
+Hosted chef ,signing up and downloading starter kit
+Boot strapping chef nodes
+Creating chef cookbooks
+creating chef recipes inside cookbooks
+Learn chef resources (Different resources like packages,services,files etc)
+cookbook_file resource
+template resource
+package resource
+Adding cookbooks to the node run list
+running chef-client
+
+Docker introduction
+Docker images
+Pulling a docker image from  internert
+creating a container from docker image
+Docker networkin using port forwarding
+Creating docker images using docker commit
+creating custom docker images using dockerfile
