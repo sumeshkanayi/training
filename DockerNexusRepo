@@ -3,3 +3,57 @@
 https://books.sonatype.com/nexus-book/3.0/reference/security.html#enable-https
 
 https://support.sonatype.com/hc/en-us/articles/217542177-Using-Self-Signed-Certificates-with-Nexus-Repository-Manager-and-Docker-Daemon
+
+---------------------------------------------------------------------------------------
+mkdir ./nexus-3.0.1-01/etc/ssl
+chmod 777 -R ./nexus-3.0.1-01/etc/ssl
+keytool -genkeypair -keystore keystore.jks -storepass password -keypass password -alias jetty -keyalg RSA -keysize 2048 -validity 5000 -dname "CN=cdtsdvo111d.rxcorp.com, OU=Example, O=Sonatype, L=Unspecified, ST=Unspecified, C=US" -ext "SAN=DNS:rxcorp.com,IP:162.44.158.89" -ext "BC=ca:true"
+
+keytool -genkeypair -keystore keystore.jks -storepass password -keypass password -alias jetty -keyalg RSA -keysize 2048 -validity 5000 -dname "CN=cdtsdvo111d.rxcorp.com, OU=Example, O=Sonatype, L=Unspecified, ST=Unspecified, C=US" -ext "SAN=DNS:rxcorp.com,IP:162.44.158.89" -ext "BC=ca:true
+
+
+vi ./nexus-3.0.1-01/etc/org.sonatype.nexus.cfg
+
+add the below lines
+application-port-ssl=8443
+
+change the nexus-args property comma delimited value to include ${karaf.etc}/jetty-https.xml. Save the file
+
+change the password in /etc/jetty-https.xml
+
+Eg:
+
+<Set name="KeyStorePath"><Property name="karaf.etc"/>/ssl/server-keystore.jks</Set>
+<Set name="KeyStorePassword">changeit</Set>
+<Set name="KeyManagerPassword">changeit</Set>
+
+Create a docker repo listen on any port
+
+------Below step will work only in corporates---------------------
+get the value and save as something.crt
+
+keytool -printcert -sslserver ${NEXUS_server}:${SSL_PORT} -rfc
+
+
+------Below step will work only in corporates---------------------
+
+Open the /etc/default/docker file or /etc/sysconfig/docker for editing.
+Depending on your operating system, your Engine daemon start options.
+Edit (or add) the DOCKER_OPTS line and add the --insecure-registry flag.
+This flag takes the URL of your registry, for example.
+DOCKER_OPTS="--insecure-registry nexus registry:port"
+
+docker images
+
+(Get the docker image name you want to push)
+
+docker tag imagename NEXUS_server:SSL_PORT/newImageName:version
+
+docker images
+
+(Will show the new name tag)
+
+docker login NEXUS_server:SSL_PORT
+
+docker push newImageTag
+
