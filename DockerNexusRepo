@@ -35,13 +35,17 @@ get the value and save as something.crt
 keytool -printcert -sslserver ${NEXUS_server}:${SSL_PORT} -rfc
 
 
-------Below step will work only in corporates---------------------
+------Above step will work only in corporates---------------------
+
 
 Open the /etc/default/docker file or /etc/sysconfig/docker for editing.
 Depending on your operating system, your Engine daemon start options.
 Edit (or add) the DOCKER_OPTS line and add the --insecure-registry flag.
 This flag takes the URL of your registry, for example.
+
 DOCKER_OPTS="--insecure-registry nexus registry:port"
+
+
 
 docker images
 
