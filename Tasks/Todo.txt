@@ -5,3 +5,18 @@ Gitblit Maven and Jenkins
 Docker
 
 -  Build a devops lab using docker composer (gitblit,jenkins,sonatype nexus) .A simple docker-compose up command should bring the entire devops lab together and should be able to shudown together as well. The order of brining the services up should be gitblit --> jenkins --> nexus
+
+End to End Scenario:
+
+Expected Result:
+
+Java Code should be deployed as docker container , 
+
+
+Requirement:
+1)Should use all tools which have discussed in the training
+2)SHould have approval gates ( Build Promotion)  
+Eg:https://www.thoughtworks.com/insights/blog/build-promotion-go
+3)Should be able to rollback production app to an earlier working build
+4)All CI and CD tool machines should have a common NFS Server share mounted and all should be using a service account to run the tools (Eg: Jenkins,gitblit) etc
+
