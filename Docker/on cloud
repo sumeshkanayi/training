@@ -9,3 +9,9 @@ Install all plugins related to docker ,cloudbee
 Configure the cloud plugin to talk to Docker 
 
 On Nexus
+
+keytool -genkeypair -keystore keystore.jks -storepass Sia@123 -keypass Sia@123 -alias jetty -keyalg RSA -keysize 2048 -validity 5000 -dname "CN=cdtsdvo111d.rxcorp.com, OU=Example, O=Sonatype, L=Unspecified, ST=Unspecified, C=US" -ext "SAN=DNS:compute.amazonaws.com,IP:172.31.4.123" -ext "BC=ca:true
+Make sure thee port is opend in thee scrutiy group
+Creat a hosted and proxy docker repo
+For proxy below is thee remote url
+https://registry-1.docker.io
