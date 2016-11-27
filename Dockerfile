@@ -1,4 +1,4 @@
-FROM 172.31.27.240:8084/tomcat
+FROM ec2-54-254-206-130.ap-southeast-1.compute.amazonaws.com:8084/tomcat
 MAINTAINER sumeshkanayi@gmail.com
 RUN apt-get -y update
 RUN apt-get -y install nginx
