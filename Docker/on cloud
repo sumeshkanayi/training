@@ -1,0 +1,11 @@
+On Dockerhost:
+
+Add -H tcp://privateipaddress:2735 to /lib/systemd/system/docker.service 
+Make sure 2735 port is added ti the security groups 
+
+On Jenkins
+Run Sudo  'curl -sSL https://get.docker.com/ | sh' on jenkins
+Install all plugins related to docker ,cloudbee
+Configure the cloud plugin to talk to Docker 
+
+On Nexus
