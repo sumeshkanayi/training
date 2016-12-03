@@ -20,3 +20,5 @@ On Docker
 
 ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2735  --insecure-registry 1
 72.31.4.123:8082 --insecure-registry 172.31.4.123:8084
+
+https://github.com/sumeshkanayi/Webapp/blob/master/Dockerfile
