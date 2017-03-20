@@ -1,0 +1,43 @@
+Create two hosts
+Make sure that SSH ports are opened from Anywhere on both hosts
+
+On Ansible Host
+-----------------------
+
+sudo apt-get -y updte && sudo apt-get -y install ansible
+
+sudo vi /etc/hosts --> add a hostfile entry for ansible slave prive ip
+
+
+
+On Ansible slave
+------------------------
+
+sudo apt-get -y update && sudo apt-get -y install python
+
+sudo useradd ansible 
+
+set a password ,remmber the password
+
+Set PasswordAuthentication yes in sshd_config file
+
+restart sshd service
+
+On Ansible_host
+-------------------------
+
+ssh-copyid ansible@slave ,copy the ssh key
+
+vi /etc/ansible/hosts and add the below entry
+
+slave ansible_user=ansible
+
+Run
+
+ansible -m ping slave
+
+get the results
+
+ 
+
+
