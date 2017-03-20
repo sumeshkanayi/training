@@ -1,0 +1,67 @@
+Two instances
+
+Rundeck server
+
+---------------------------
+
+sudo apt-get -y install default-jdk 
+
+wget http://dl.bintray.com/rundeck/rundeck-deb/rundeck-2.7.3-1-GA.deb
+
+sudo dpkg -i rundeck-2.7.3-1-GA.deb
+
+sudo vi /etc/rundeck/rundeck-config.properties
+
+grails.serverURL=http://PUBLIC_DNS:4440
+
+sudo service rundeckd restart
+
+Add a hostfile entry for rundeck node public ip (eg 172.x.x.x node)
+
+sudo vi /etc/passwd
+
+chenge 
+
+rundeck:x:112:116:Rundeck user account:/var/lib/rundeck:/bin/false
+
+to
+
+rundeck:x:112:116:Rundeck user account:/var/lib/rundeck:/bin/bash
+
+sudo chown -R rundeck /var/lib/rundeck
+
+su rundeck
+
+ssh-keygen -t rsa
+
+vi ~/.ssh/id_rsa.pub
+select the entire line except rundeck@ip-x-x-x-x and copy
+
+
+On Rundeck Node
+--------------------
+
+sudo adduser rundeck
+
+ssh-keygen 
+
+vi ~/.ssh/authorized_keys
+
+paste the contents of publick key here
+
+
+on rundeck-server
+----------------------------
+
+do an ssh rundeck@node
+
+make sure it allows you to login
+
+Later
+ vi /var/rundeck/projects/MyProj/etc/resources.xml
+ 
+ Add the node information here
+ 
+ (duplicate localhost node details and then replace localhost with node)
+
+
