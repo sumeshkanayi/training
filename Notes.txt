@@ -2,8 +2,8 @@ Add the below tag in pom.xml
 
 <distributionManagement>
   	<repository>
-  		<id>prod</id>
-  		<url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
+  		<id>THE ID YOU MENTIONED IN THE SERVERS SECTION</id>
+  		<url>YOUR REPO URL</url>
   		<name>myprod</name>
          </repository>
 
@@ -31,10 +31,10 @@ To use nexus for dependency management add the below tags under m2/settings.xml 
 
 <mirrors>
     <mirror>
-      <id>myteam-nexus</id>
+      <id>prod</id>
       <mirrorOf>*</mirrorOf>
-      <!-- CHANGE HERE by your team own nexus server -->
-      <url>http:// IP or FQDN /nexus/content/groups/public </url>
+    
+      <url>YOUR REPO URL</url>
     </mirror>
   </mirrors>
 
