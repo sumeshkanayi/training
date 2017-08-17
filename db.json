@@ -1,0 +1,98 @@
+{
+"apps":[
+	{
+		"name": "cntlm",
+		"url": "http://192.168.33.90:8081/repository/devops/cntlm-0.92.3-setup.exe",
+		"installationCommandline": "None",
+		"postInstallationCommandline": "None",
+		"configurationFileUrl": "None",
+		"postInstallationBanner": "Please refer cntlm configuration settings here https://jiraims.rm.imshealth.com/wiki/display/MLB/IMS+Proxy",
+		"dependencies": "none"
+	},
+	{
+		"Name": "babun",
+		"Url": "http://192.168.33.90:8081/repository/devops/babun-1.2.0-dist.zip",
+		"InstallationCommandline": "\\babun-1.2.0\\install.bat",
+		"PostInstallationCommandline": "None",
+		"ConfigurationFileUrl": "None",
+		"PostInstallationBanner": "None",
+		"dependencies": "cntlm"
+	},
+	
+	{
+		"Name": "jdk",
+		"Url": "http://192.168.33.90:8081/repository/devops/jdk-8u144-windows-x64.exe",
+		"InstallationCommandline": "None",
+		"PostInstallationCommandline": "None",
+		"ConfigurationFileUrl": "None",
+		"PostInstallationBanner": "None",
+		"dependencies": "None"
+	},
+	{
+		"Name": "scala",
+		"Url": "http://192.168.33.90:8081/repository/devops/scala-2.12.3.msi",
+		"InstallationCommandline": "None",
+		"PostInstallationCommandline": "None",
+		"ConfigurationFileUrl": "None",
+		"PostInstallationBanner": "None",
+		"dependencies": "jdk"
+	},
+
+	{
+		"Name": "sbt",
+		"Url": "http://192.168.33.90:8081/repository/devops/sbt-0.13.9.msi",
+		"InstallationCommandline": "None",
+		"PostInstallationCommandline": "None",
+		"ConfigurationFileUrl": "None",
+		"PostInstallationBanner": "None",
+		"dependencies": "scala"
+	},
+	
+	{
+		"Name": "docker",
+		"Url": "http://192.168.33.90:8081/repository/devops/DockerToolbox.exe",
+		"InstallationCommandline": "None",
+		"PostInstallationCommandline": "None",
+		"ConfigurationFileUrl": "None",
+		"PostInstallationBanner": "None",
+		"dependencies": "None"
+	},
+
+	{
+		"Name": "maven",
+		"Url": "http://192.168.33.90:8081/repository/devops/apache-maven-3.5.0-bin.zip",
+		"InstallationCommandline": "None",
+		"PostInstallationCommandline": "None",
+		"ConfigurationFileUrl": "None",
+		"PostInstallationBanner": "None",
+		"dependencies": "jdk"
+	},
+	{
+		"Name": "intellij",
+		"Url": "http://192.168.33.90:8081/repository/devops/ideaIC-2017.2.1.exe",
+		"InstallationCommandline": "None",
+		"PostInstallationCommandline": "None",
+		"ConfigurationFileUrl": "None",
+		"PostInstallationBanner": "None",
+		"dependencies": "none"
+	},
+	{
+		"Name": "notepad",
+		"Url": "http://192.168.33.90:8081/repository/devops/npp.7.3.Installer.exe",
+		"InstallationCommandline": "None",
+		"PostInstallationCommandline": "None",
+		"ConfigurationFileUrl": "None",
+		"PostInstallationBanner": "None",
+		"dependencies": "none"
+	},
+	{
+		"Name": "eclipse",
+		"Url": "http://192.168.33.90:8081/repository/devops/IMS_SOA_IDE_20150602.zip",
+		"InstallationCommandline": "None",
+		"PostInstallationCommandline": "None",
+		"ConfigurationFileUrl": "None",
+		"PostInstallationBanner": "None",
+		"dependencies": "none"
+	}
+]
+}
