@@ -35,7 +35,7 @@ To use nexus for dependency management add the below tags under m2/settings.xml 
       <mirrorOf>*</mirrorOf>
     
       <url>YOUR REPO URL</url>
-    </mirrorx>
+    </mirror>
   </mirrors>
 
 
